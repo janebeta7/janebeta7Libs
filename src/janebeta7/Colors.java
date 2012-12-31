@@ -216,11 +216,18 @@ public class Colors {
 	}
 
 	public int getColor(int n) {
-		int index = n;
-		if (n > getLength())
-			index = n;
+		
+		if (!isOsc)
+		{
+			int index = n;
+			if (n > getLength())
+				index = n;
 
-		return imageColors[index].getRGB();
+			return imageColors[index].getRGB();
+		}
+			else
+			return osc.getOsc(n); //TODO aun no implementado
+		
 	}
 
 	public int getOrderColor() {

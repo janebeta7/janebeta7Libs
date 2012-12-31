@@ -44,7 +44,11 @@ public class Osc {
 			// get all the arguments for the message. in this case we're
 			// assuming one and only one argument.
 			int val = (Integer) msg.getArguments().get(0);
-			System.out.println("* aColor > val:" + val);
+			
+			//TODO: ahora devuelve el numero aleatorio de la paleta pero deber’a devolver TODOS los
+			//colores para que desde el cliente decidamos si queremos uno aleatorio o uno por orden y 
+			// poder hacer el getColor(0) que aun no est‡ implementado
+			//System.out.println("* aColor > val:" + val);
 			argVal = val;
 
 		}
@@ -97,4 +101,8 @@ public class Osc {
 	public int getOsc() {
 		return argVal;
 	}
+	public int getOsc(int n) {
+		return argVal;
+	}
+	
 }

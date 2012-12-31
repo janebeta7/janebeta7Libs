@@ -44,7 +44,7 @@ public class Osc {
 			// get all the arguments for the message. in this case we're
 			// assuming one and only one argument.
 			int val = (Integer) msg.getArguments().get(0);
-			System.out.println("* aColor > val:" + val);
+			//System.out.println("* aColor > val:" + val);
 			argVal = val;
 
 		}
